@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Albra";
+  src: url(../Assets/Fonts/Albra/Albra-Light.otf);
+}
+
+:root {
+  /* Colors */
+  --red: #C0263F;
+  --grey-darkest: #000103;
+  --grey-dark: #333138;
+  --grey-medium: #515052;
+  --grey-light: #C5C5C3;
+  --white: #FFFFFA;
+  --orange: #FF9D2E;
+  --yellow: #F6FF2E;
+  /* Font type */
+  --header-font: 'Albra';
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  scroll-behavior: smooth;
+  margin: auto;
+}
+
+body {
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: var(--grey-light);
+  background: -webkit-gradient(linear, left top, right top, from(var(--grey-darkest)), to(var(--grey-dark)));
+  background: linear-gradient(90deg, var(--grey-darkest) 0%, var(--grey-dark) 100%);
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+li a {
+  margin-right: 2em;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+.cta {
+  display: block;
+  padding: 1em 1em 1em 0;
+}
+
+img {
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 0 0);
+}
+
+ul.transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+ul.transition li {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  width: 20%;
+}
+/*# sourceMappingURL=styles.css.map */
