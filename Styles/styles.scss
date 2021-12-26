@@ -53,7 +53,7 @@ h1 {
     font-family: var(--header-font);
     font-style: normal;
     font-weight: 400;
-    color: var(--white);
+    color: var(--orange);
 }
 
 ul {
@@ -65,12 +65,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--orange);
+    color: var(--red);
     transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-    color: var(--yellow);
+    color: var(--white);
 }
 
 li a {
@@ -90,7 +90,10 @@ li a {
 
 img {
     width: 100%;
+    max-width: 400px;
     clip-path: polygon(0 0, 100% 0, 0 0);
+    border-radius: 16px;
+    box-shadow: 10px 10px 15px -6px rgba(0, 0, 0, 0.35);
 }
 
 ul.transition {
@@ -106,5 +109,6 @@ ul.transition {
 
 ul.transition li {
     transform: scaleY(0);
+    background: linear-gradient(90deg, var(--grey-darkest) 0%, var(--grey-dark) 100%);
     width: 20%;
 }
